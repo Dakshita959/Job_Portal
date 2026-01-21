@@ -1,0 +1,155 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #1f2933;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #f59e0b;
+}
+
+/* Search / hero section */
+.search-section {
+    padding: 40px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.search-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.search-section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    min-width: 240px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #1d4ed8;
+}
+
+/* Jobs section */
+.jobs-available {
+    padding: 30px 8%;
+}
+
+/* center "Latest Jobs" */
+.jobs-available h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.job-card h3 {
+    margin-bottom: 8px;
+}
+
+.job-card .meta {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    margin-bottom: 10px;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #10b981;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.apply-btn:hover {
+    background: #059669;
+}
+
+/* Simple responsiveness */
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+    }
+}
